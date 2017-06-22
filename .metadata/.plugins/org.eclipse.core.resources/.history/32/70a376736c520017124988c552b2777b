@@ -1,0 +1,31 @@
+package com.mycompany;
+import org.apache.wicket.request.mapper.parameter.PageParameters;
+import org.apache.wicket.markup.html.WebPage;
+import org.apache.wicket.markup.html.basic.Label;
+import org.apache.wicket.markup.html.form.Form;
+
+
+public class HomePage extends WebPage {
+
+	  private static final long serialVersionUID = 1L;
+
+	  private Form<?> form = new Form("f") {
+	    private static final long serialVersionUID = -1700095884500348972L;
+
+	    @Override
+	    protected void onSubmit() {
+	      ResultPage result = new ResultPage();
+	      setResponsePage(result);
+	    }
+	  };
+
+	  private Label lbl = new Label("message",
+	      "If you see this message wicket is properly configured and running");
+
+	  public HomePage(final PageParameters parameters) {
+
+	    add(form);
+
+	    form.add(lbl);
+	  }
+	}

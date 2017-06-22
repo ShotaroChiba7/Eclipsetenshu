@@ -1,0 +1,20 @@
+package com.mycompany;
+
+import org.apache.wicket.markup.html.WebPage;
+import org.apache.wicket.markup.html.form.Form;
+
+public class doteki extends WebPage {
+	private static final long serialVersionUID = 3598788934381254916L;
+
+	  private Form form = new Form("f") {
+	    private static final long serialVersionUID = -1700095884500348972L;
+
+	    @Override
+	    protected void onSubmit() {
+	    	System.out.println("送信ボタンが押されました");
+	      ResultPage result = new ResultPage((HomePage) this.getParent());
+	      setResponsePage(result);
+	    }
+	  };
+
+}

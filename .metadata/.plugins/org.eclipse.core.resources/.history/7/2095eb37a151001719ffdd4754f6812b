@@ -1,0 +1,39 @@
+package com.mycompany;
+
+import org.apache.wicket.markup.html.WebPage;
+import org.apache.wicket.markup.html.basic.Label;
+import org.apache.wicket.markup.html.link.Link;
+import org.apache.wicket.request.mapper.parameter.PageParameters;
+
+public class HomePage extends WebPage {
+	private static final long serialVersionUID = 1L;
+
+	public HomePage(final PageParameters parameters) {
+		super(parameters);
+
+		add(new Label("version", getApplication().getFrameworkSettings().getVersion()));
+
+			add(new Link("weblink"){
+
+				@Override
+				public void onClick() {
+					// TODO 自動生成されたメソッド・スタブ
+					System.out.println("test");
+				}
+				public void onDBClick() {
+					// TODO 自動生成されたメソッド・スタブ
+					System.out.println("ダブルクリック");
+				}				
+
+			});//これはaddを終了する);
+			
+			add(new Link("weblink"){
+				@Override
+				public void onClick(){
+					System.out.println("test23");
+				}
+			});
+		// TODO Add your page's components here
+
+    }
+}

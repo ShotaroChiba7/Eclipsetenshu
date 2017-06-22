@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wicket Examination Menu Page</title>
+</head>
+<body>
+<strong>Wicket Examination Menu Page</strong>
+<br/><br/>
+<form wicket:id="f">
+    <input type="submit" wicket:id="diary" value="Diary"/>
+    <input type="submit" wicket:id="validation" value="Validation"/>
+</form>
+ 
+</body>
+</html>

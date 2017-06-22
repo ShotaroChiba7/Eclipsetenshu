@@ -1,0 +1,29 @@
+package com.mycompany;
+
+import java.util.Scanner;
+
+public class Meen {
+
+	public static void main(String args[]){
+	Car kuruma = new Car();
+	kuruma.setgass(20);
+	kuruma.showgass();
+
+
+	System.out.println("100以上の整数のうち素数を入力してください。");
+	Scanner scan = new Scanner(System.in);
+	int sosu = scan.nextInt();
+	System.out.println(sosu + "が入力されました。");
+
+
+	Sosu r = new Sosu();
+	if(r.checksosu(sosu)){
+		System.out.println("素数です");
+	}else{
+		System.out.println("素数ではなかったようです。");
+
+	}
+
+
+	}
+}

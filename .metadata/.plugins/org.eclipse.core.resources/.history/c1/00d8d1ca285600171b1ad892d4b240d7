@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:wicket="http://wicket.apache.org/">
+<head>
+<title>Wicket Examination Homepage</title>
+</head>
+<body>
+<strong>Wicket Examination Homepage<br>日本語化</strong>
+<br/><br/>
+<span wicket:id="msg"> error message will be here </span>
+<form wicket:id="f">
+  タイトル : <input type="text" wicket:id="subject" size="35"/>
+タイトル2 : <input type="text" wicket:id="subject2" size="35"/>//追加
+  <br/><br/>
+  日付: <input type="text" wicket:id="date" size="20"/>
+  タイプ:
+  <select wicket:id="type">
+    <option>Example1</option>
+    <option>Example2</option>
+    <option>Example3</option>
+  </select>
+  <br/><br/>
+  本文: <br/>
+  <textarea wicket:id="article" rows="20" cols="60">
+    article will be here
+  </textarea>
+  <br/><br/>
+  <input type="submit" value="送信"/>
+</form>
+
+
+<p><a href="http://localhost:8080/myproject/?48">1度目の投稿</a></p>
+<p><a href="http://localhost:8080/myproject/?51">2度目の投稿</a></p>
+<p><a href="http://localhost:8080/myproject/?4">3度目の投稿</a></p>
+
+</body>
+</html>

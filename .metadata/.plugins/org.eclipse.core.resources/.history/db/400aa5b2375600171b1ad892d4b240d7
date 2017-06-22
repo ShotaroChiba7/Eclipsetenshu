@@ -1,0 +1,42 @@
+package com.mycompany;
+
+import org.apache.wicket.request.mapper.parameter.PageParameters;
+import org.apache.wicket.markup.html.WebPage;
+import org.apache.wicket.markup.html.form.Button;
+import org.apache.wicket.markup.html.form.Form;
+ 
+public class MenuPage extends WebPage {
+  private Button diaryButton = new Button("diary") {
+      @Override
+      public void onSubmit() {
+        System.out.println("Pushed Diary Button.");
+        //setResponsePage(new HomePage(new DiaryVO()));
+      }
+    };
+ 
+  private Button validationButton = new Button("validation") {
+      @Override
+      public void onSubmit() {
+        System.out.println("Pushed Validation Button.");
+        //setResponsePage(new ValidationExamPage());
+      }
+    };
+ 
+  private Form form = new Form("f") {
+      @Override
+      public void onSubmit() {
+        System.out.println("Form Submitted.");
+      }
+    };
+ 
+  public MenuPage(final PageParameters parameters) {
+    this();
+  }
+ 
+  public MenuPage() {
+    add(form);
+ 
+    form.add(diaryButton);
+    form.add(validationButton);
+  }
+}

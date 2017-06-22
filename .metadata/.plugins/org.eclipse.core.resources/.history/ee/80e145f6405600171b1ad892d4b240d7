@@ -1,0 +1,20 @@
+package com.mycompany;
+
+import java.util.Scanner;
+
+public class Meen {
+
+	public static void main(String args[]){
+	Car kuruma = new Car();
+	kuruma.setgass(20);
+	kuruma.showgass();
+
+
+	System.out.println("数値を入力してください。");
+	Scanner scan = new Scanner(System.in);
+	int sosu = scan.nextInt();
+	System.out.println(sosu + "が入力されました。");
+	}
+
+
+}

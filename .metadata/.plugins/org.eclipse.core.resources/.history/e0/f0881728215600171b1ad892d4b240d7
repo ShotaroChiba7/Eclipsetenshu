@@ -1,0 +1,12 @@
+package com.mycompany;
+
+import org.apache.wicket.markup.html.WebPage;
+import org.apache.wicket.markup.html.basic.Label;
+
+public class Page2 extends WebPage {
+    private static final long serialVersionUID = 1L;
+
+    public Page2() {
+            super.add(new Label("nextMessage", "これは2ページ目です。"));
+    }
+}

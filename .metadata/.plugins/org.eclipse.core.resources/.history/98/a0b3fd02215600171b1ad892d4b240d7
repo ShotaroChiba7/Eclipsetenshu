@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+ <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Index Page</title>
+        <style type="text/css">
+        h1 {
+            background-color: #CCAAFF;
+            border-style: none none solid solid;
+            border-width: 0px 0px 2px 5px;
+            padding: 1px 5px 1px 5px;
+            font-size: 14pt;
+        }
+        #feedback { text-color: #FF0000; }
+        #navigate{ font-size: 10pt; font-weight: 700px; }
+        </style>
+    </head>
+    <body>
+        <h1 wicket:id="title">Wicket Sample</h1>
+        <div wicket:id="error"></div>
+        <form wicket:id="form1">
+            <table>
+            <tr><td>name:</td>
+            <td><input type="text" wicket:id="Name" /></td></tr>
+            <tr><td>comment:</td>
+            <td><textarea wicket:id="Comment" rows="3" cols="30"></textarea></td></tr>
+            <tr><td></td>
+            <td><input type="submit" wicket:id="submit" value="送信" /></td></tr>
+        </table>
+        </form>
+        <div id="navigate" wicket:id="navigate"></div>
+        <a wicket:id="link">LINK</a>
+        <div wicket:id="list">
+            <hr />
+            <span wicket:id="comment"></span>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+package com.mycompany;
+
+public class Sosu {
+
+	boolean checksosu(int a){
+		int i = 1;
+		int j = 0;
+		boolean h = true;
+
+			do{
+				if(a % i ==0){
+					if (a == i){
+						j = 2;//素数
+						h = true;
+					}else{
+						j = 1;//not素数
+						h = false;
+					}
+				}else{
+					i = i + 1;
+				}
+				System.out.println(i + " " +j);
+			}while(j == 0);
+
+				return h;
+	}
+
+}

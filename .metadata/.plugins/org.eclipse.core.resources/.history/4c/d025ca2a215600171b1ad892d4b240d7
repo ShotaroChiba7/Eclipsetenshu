@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>NextPage</title>
+</head>
+<body>
+        <span wicket:id="nextMessage">2ページ目のメッセージ</span>
+</body>
+</html>

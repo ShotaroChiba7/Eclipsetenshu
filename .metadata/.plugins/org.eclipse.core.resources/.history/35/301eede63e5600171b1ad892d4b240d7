@@ -1,0 +1,10 @@
+package com.mycompany;
+
+public class Meen {
+
+	public static void main(String args[]){
+	Car kuruma = new Car();
+	kuruma.setgass(20);
+	kuruma.showgass();
+	}
+}

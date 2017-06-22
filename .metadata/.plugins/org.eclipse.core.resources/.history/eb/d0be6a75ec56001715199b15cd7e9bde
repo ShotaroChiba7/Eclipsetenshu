@@ -1,0 +1,43 @@
+package com.mycompany;
+
+public class Sosu {
+
+	int pj;
+
+
+	Sosu(){
+		pj = 3;
+	}
+
+
+void	setP(int b){
+		pj = b;
+	}
+
+	boolean checksosu(int a) {
+		int i = 2;
+		int j = 0;
+		boolean h = true;
+
+		do {
+
+			if ((a % i) == 0) {
+				if (a == i) {
+					j = 2;// 素数
+					h = true;
+				} else {
+					j = 1;
+					h = false;
+				}
+			} else {
+				i = i + 1;
+			}
+
+		} while (j == 0);
+		if (j == 1) {
+			System.out.println(i + "で割り切れました");
+		}
+		return h;
+	}
+
+}

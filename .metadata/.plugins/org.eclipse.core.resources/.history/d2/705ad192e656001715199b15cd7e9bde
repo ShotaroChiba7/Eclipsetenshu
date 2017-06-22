@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:wicket="http://wicket.apache.org/">
+<head>
+<title>Wicket Examination Homepage</title>
+</head>
+<body>
+	<strong>Wicketでいろいろ表示する2<br /> <br />
+	</strong>
+	<br />
+	<br />
+	<span wicket:id="msg"> error message will be here </span>
+	<form wicket:id="f">
+		長いタイトル : <input type="text" wicket:id="subject" size="40" /> <br /> <br />
+		タイトル2 : <input type="text" wicket:id="subject2" size="15" /> <br /><br />
+		日付: <input type="text" wicket:id="date" size="20" />
+		タイプ: <select	wicket:id="type">
+			<option>Example1</option>
+			<option>Example2</option>
+			<option>Example3</option>
+		</select> <br /> <br />
+		本文: <br />
+		<textarea wicket:id="article" rows="10" cols="20">
+    article will be here
+  </textarea>
+  <br/>
+  備考欄: <br />
+		<textarea wicket:id="article2" rows="8" cols="13">
+    article will be here
+  </textarea>
+		<br /> <br /> <input type="submit" value="送信" />
+	</form>
+	<p><button wicket:id="btk">ボタン君</button></p>
+</body>
+</html>

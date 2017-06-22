@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:wicket="http://wicket.apache.org/">
+<head>
+<title>Wicket Examination Homepage</title>
+</head>
+<body>
+<strong>Wicket Examination Homepage</strong>
+<br/><br/>
+<span wicket:id="msg"> error message will be here </span>
+<form wicket:id="f">
+  タイトル : <input type="text" wicket:id="subject" size="35"/>
+
+  <br/><br/>
+  日付: <input type="text" wicket:id="date" size="20"/>
+  Type :
+  <select wicket:id="type">
+    <option>Example1</option>
+    <option>Example2</option>
+    <option>Example3</option>
+  </select>
+  <br/><br/>
+  本文: <br/>
+  <textarea wicket:id="article" rows="20" cols="60">
+    article will be here
+  </textarea>
+  <br/><br/>
+  <input type="submit" value="送信"/>
+</form>
+
+<p><a button wicket:id="btn" value="eee"></a></p>
+
+</body>
+</html>

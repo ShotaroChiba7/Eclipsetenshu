@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:wicket="http://wicket.apache.org/">
+<head>
+<title>Result Page</title>
+</head>
+<body>
+
+Result Page
+
+</body>
+</html>

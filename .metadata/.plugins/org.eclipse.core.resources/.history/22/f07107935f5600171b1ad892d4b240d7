@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>タイトル素数</title>
+</head>
+<body>
+	<form wicket:id="f">
+		素数入力欄 : <input type="number" wicket:id="subject" size="10" /> <br />
+		<br /> <br />
+		<br /> <input type="button" wicket:id="a"value="素数チェック" />
+	</form>
+
+</body>
+</html>
