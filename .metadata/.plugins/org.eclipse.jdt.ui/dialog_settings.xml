@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item value="C:\Program Files\Microsoft JDBC Driver 6.0 for SQL Server\sqljdbc_6.0\jpn\jre8" key="org.eclipse.jdt.ui.lastextjar"/>
 	<section name="javadoc">
 		<item value="-encoding UTF-8&#x0D;&#x0A;-charset UTF-8" key="additionalparam"/>
 	</section>
@@ -29,6 +30,9 @@
 		<item value="true" key="org.eclipse.jdt.ui.typecomment.deprecated"/>
 	</section>
 	<section name="quick_assist_proposal_size">
+	</section>
+	<section name="BuildPathsPropertyPage">
+		<item value="2" key="pageIndex"/>
 	</section>
 	<section name="completion_proposal_size">
 	</section>

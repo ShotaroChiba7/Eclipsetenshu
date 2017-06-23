@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="org.apache.wicket.markup.html.form.TextField"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="org.apache.wicket.markup.html.form.Button"/>
+<fullyQualifiedTypeName name="org.apache.wicket.markup.html.link.Link"/>
+<fullyQualifiedTypeName name="java.lang.Void"/>
+<fullyQualifiedTypeName name="java.awt.Label"/>
+<fullyQualifiedTypeName name="com.mycompany.Sosu"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="org.apache.wicket.markup.html.form.Form"/>
+<fullyQualifiedTypeName name="org.apache.wicket.markup.html.basic.Label"/>
 </qualifiedTypeNameHistroy>
